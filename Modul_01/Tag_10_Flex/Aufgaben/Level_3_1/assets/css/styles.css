@@ -65,7 +65,7 @@ h1, h2 {
     font-weight: 400;
 }
 
-header, nav, nav ul, .hero, section, .clients, .customers article {
+header, nav, nav ul, .hero, section, .clients, .customers article, footer article, footer ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,6 +94,27 @@ img {
 /* SPECIFIC STYLES */
 
 body {
+    position: relative;
+
+    .backToTop {
+        position: fixed;
+        display: inline-block;
+        right: 20px;
+        bottom: 20px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: .5;
+    }
 
     /* === HEADER === */
 
@@ -275,11 +296,20 @@ body {
         color: var(--basic-white);
         padding: 70px 180px;
 
-        aside {
-            font-weight: 300;
+        article {
+            justify-content: space-between;
 
-            span {
-                font-weight: 500;
+            aside {
+                font-weight: 300;
+    
+                span {
+                    font-weight: 500;
+                }
+            }
+
+            ul {
+                gap: 0 20px;
+                font-size: 1.3rem;
             }
         }
     }
